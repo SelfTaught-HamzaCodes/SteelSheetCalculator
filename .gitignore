@@ -3,6 +3,9 @@
 # dependencies
 node_modules/
 
+# Expo (assets excluded for Expo Snack import compatibility; keep locally for icons)
+assets/
+
 # Expo
 .expo/
 dist/
