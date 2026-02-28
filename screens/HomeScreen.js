@@ -529,7 +529,6 @@ const styles = StyleSheet.create({
   },
   widthChipText: { fontSize: 14, fontWeight: '600' },
   runningLengthHint: { fontSize: 12, marginBottom: 8 },
-  label: { fontSize: 14, fontWeight: '600', marginBottom: 8, marginTop: 18 },
   input: {
     fontSize: 16,
     padding: 14,

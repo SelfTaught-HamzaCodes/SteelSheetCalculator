@@ -520,14 +520,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginRight: 12,
   },
-  rowIconWrapDanger: {
-    width: 36,
-    height: 36,
-    borderRadius: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginRight: 12,
-  },
   rowLabel: { fontSize: 16, fontWeight: '500' },
   rowValue: { fontSize: 15 },
   rowRight: { flexDirection: 'row', alignItems: 'center' },
@@ -607,9 +599,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   languageModalOptionSelected: {},
-  languageModalOptionDisabled: {},
   languageModalOptionText: { fontSize: 16, fontWeight: '500' },
-  languageModalComingSoon: { fontSize: 13, fontWeight: '500' },
   languageModalOk: {
     marginTop: 4,
     paddingVertical: 14,
@@ -657,7 +647,6 @@ const styles = StyleSheet.create({
   confirmModalBtnCancel: { borderWidth: 1.5, marginRight: 6 },
   confirmModalBtnConfirm: { marginLeft: 6 },
   confirmModalBtnCancelText: { fontSize: 16, fontWeight: '600' },
-  confirmModalBtnConfirm: {},
   confirmModalBtnConfirmText: { color: '#fff', fontSize: 16, fontWeight: '600' },
   footer: {
     flexDirection: 'row',

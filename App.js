@@ -39,7 +39,7 @@ export default function App() {
     AsyncStorage.getItem(HISTORY_KEY).then((raw) => {
       try {
         if (raw) setHistory(JSON.parse(raw));
-      } catch (_) {}
+      } catch (_) { /* ignore corrupt data */ }
     });
     AsyncStorage.getItem(DEFAULT_SHEET_SIZES_KEY).then((raw) => {
       try {
@@ -47,7 +47,7 @@ export default function App() {
           const arr = JSON.parse(raw);
           if (Array.isArray(arr) && arr.length > 0) setDefaultSheetSizes(arr);
         }
-      } catch (_) {}
+      } catch (_) { /* ignore corrupt data */ }
     });
     AsyncStorage.getItem(LANGUAGE_KEY).then((lang) => {
       if (lang && (lang === 'en' || lang === 'ur')) {
@@ -140,8 +140,7 @@ export default function App() {
             onLanguageChange={handleLanguageChange}
           />
         );
-      default:
-        // key forces remount when switching edit vs fresh so prefill applies
+      default: {
         const prefill = editPrefill || {};
         return (
           <HomeScreen
@@ -155,6 +154,7 @@ export default function App() {
             isDark={isDark}
           />
         );
+      }
     }
   };
 

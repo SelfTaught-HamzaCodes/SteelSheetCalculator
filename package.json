@@ -27,7 +27,8 @@
   },
   "private": true,
   "devDependencies": {
-    "jest-expo": "^54.0.17"
+    "jest-expo": "^54.0.17",
+    "typescript": "~5.3.3"
   },
   "jest": {
     "preset": "jest-expo"
