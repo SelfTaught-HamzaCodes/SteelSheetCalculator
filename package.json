@@ -25,11 +25,14 @@
     "react-native-view-shot": "4.0.3",
     "react-native-web": "^0.21.0"
   },
-  "private": true,
   "devDependencies": {
     "jest-expo": "^54.0.17",
     "typescript": "~5.3.3"
   },
+  "overrides": {
+    "typescript": "~5.3.3"
+  },
+  "private": true,
   "jest": {
     "preset": "jest-expo"
   }
